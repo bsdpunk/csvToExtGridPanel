@@ -18,7 +18,6 @@
 #===============================================================================
 
 set -o nounset                              # Treat unset variables as an error
-#!/bin/bash
 
 csv2json $1.csv -d',' -q'"' | python -m json.tool > model/$1.json
 
